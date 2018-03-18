@@ -1,0 +1,40 @@
+
+<script src="http://code.jquery.com/jquery-latest.js"></script><script language="javascript">'use strict';$(function() {var width = 1400; var animationSpeed = 1250; var pause = 3500; var currentSlide = 1;var $slider = $('#slider'); var $slideContainer = $('.slides', $slider); var $slides = $('.slide', $slider); var interval; function startSlider() { interval = setInterval(function() { $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {if (++currentSlide === $slides.length) {currentSlide = 1; $slideContainer.css('margin-left', 0); }});}, pause);} function pauseSlider() {clearInterval(interval);}$slideContainer.on('mouseenter', pauseSlider).on('mouseleave', startSlider);startSlider();});</script><div style="width: 1400px; margin: 0 auto;"><div style="position: relative; width: 1400px; "><div style="position: absolute; right:0px; top:0px; padding: 3px 7px 3px; z-index:99; background-color: #000000; opacity:0.5; border-radius:7px;"><A style="color: #fff; text-decoration:none; font-size:7pt; line-height:10px; font-family: arial;" HREF="http://www.123-slideshow.com" TARGET="_blank">Slideshow Maker</A></div><style type="text/css">#slider {width: 1400px; height: 500px; border: 0px solid #FFFFFF; border-radius: 0px; overflow: hidden; position: relative;  cursor: hand; cursor: pointer}#slider .slides {width: 5600px; height: 500px;  display: block; margin: 0; padding: 0;}#slider .slide {width: 1400px; height: 500px; float: left; list-style-type: none;}.So160131 {position: absolute; max-width: 1400px; margin: 0px;}.c4929  {position: absolute; bottom: 0px; width:100%;  padding: 12px; background-color: rgba(0, 0, 0, 0.7); color: #FFFFFF; font-size:30pt; font-family:Tahoma; text-align:left; line-height:60px; z-index:33; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}</style><div id="slider"><ul class="slides">
+
+<li class="slide slide1">
+ <figure class="So160131">
+  <IMG SRC="123-slideshow/stunning-pictures.jpg">
+ <figcaption class="c4929">
+Stunning Pictures
+</figcaption> 
+ </figure>
+ </li>
+
+<li class="slide slide2">
+ <figure class="So160131">
+  <IMG SRC="123-slideshow/simple-and-powerfull.jpg">
+ <figcaption class="c4929">
+Simple And Powerfull
+</figcaption> 
+ </figure>
+ </li>
+
+<li class="slide slide3">
+ <figure class="So160131">
+  <IMG SRC="123-slideshow/high-quality.jpg">
+ <figcaption class="c4929">
+High Quality
+</figcaption> 
+ </figure>
+ </li>
+
+<li class="slide slide1">
+ <figure class="So160131">
+  <IMG SRC="123-slideshow/stunning-pictures.jpg">
+ <figcaption class="c4929">
+Stunning Pictures
+</figcaption> 
+ </figure>
+ </li>
+
+</ul></div></div></div>
